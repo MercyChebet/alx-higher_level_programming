@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 for i in range(99):
-
-    print("{} = {}".format(i, hex(i)))
+    print("{:02d}".format(i), end=', ')
+print(99)
