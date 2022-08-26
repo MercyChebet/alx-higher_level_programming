@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-import app
+
+import printing_easy
