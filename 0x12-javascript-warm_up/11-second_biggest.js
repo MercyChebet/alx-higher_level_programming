@@ -1,10 +1,9 @@
 #!/usr/bin/node
+// searches the second biggest integer in the list of arguments.
 
-function secondMax (x) {
-  return x.sort().reverse()[1];
-}
-if (process.argv.length < 4) {
-  console.log('0');
+if (process.argv.length <= 3) {
+  console.log(0);
 } else {
-  console.log(secondMax(process.argv.slice(2)));
+  const list = process.argv.sort();
+  console.log(list.reverse()[1]);
 }
