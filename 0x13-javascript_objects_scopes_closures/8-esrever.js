@@ -6,5 +6,3 @@ exports.esrever = function (list) {
   }
   return reversed;
 };
-Footer
-
