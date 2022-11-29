@@ -1,10 +1,16 @@
-const initDict = require('./101-data').dict;
-const newDict = {};
+const dict = require('./101-data').dict;
 
-for (const key in initDict) {
-  if (newDict[initDict[key]] === undefined) {
-    newDict[initDict[key]] = [];
+const totalist = Object.entries(dict);
+const vals = Object.values(dict);
+const valsUniq = [...new Set(vals)];
+const newDict = {};
+for (const j in valsUniq) {
+  const list = [];
+  for (const k in totalist) {
+    if (totalist[k][1] === valsUniq[j]) {
+      list.unshift(totalist[k][0]);
+    }
   }
-  newDict[initDict[key]].push(key);
+  newDict[valsUniq[j]] = list;
 }
 console.log(newDict);
