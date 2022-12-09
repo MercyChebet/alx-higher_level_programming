@@ -32,9 +32,3 @@ if __name__ == '__main__':
     print(state_add.id)
 
     session.close()
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-
